@@ -1,0 +1,34 @@
+#!/bin/bash
+# Script utility for starting and stopping Appium sever via command line
+DIR=$(dirname "${BASH_SOURCE[0]}")
+
+# Check if we're starting or stopping Appium
+if [ $1 = "start" ] ; then
+    start=true
+fi
+if [ $1 = "stop" ] ; then
+    start=false
+fi
+
+# Check that Appium is installed where we expect
+appium_path="/Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js"
+if [ ! -f $appium_path ] ; then
+    >&2 echo "Could not find:" $appium_path
+    echo "You should install Appium and make sure it's in /Applications"
+    exit 1
+fi
+
+if [ "$start" = true ] ; then
+    rm $DIR/log/appium.log
+
+    # Start Appium server
+    $appium_path > $DIR/log/appium.log 2>&1 &
+
+    # Loop until our log says the server has started
+    while [[ ! "$(cat ./scripts/log/appium.log)" =~ "started" ]]; do true; done;
+
+else
+    # Stop Appium server
+    # Fixme: This works, but it's probably bad if the user is running unrelated node processes
+    killall node
+fi

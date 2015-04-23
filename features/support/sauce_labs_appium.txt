@@ -1,0 +1,10 @@
+[caps]
+platformName = "ios"
+deviceName = "iPhone 5s"
+platformVersion = "8.1"
+app = "sauce-storage:SmartOffice.zip" 
+username = ""
+acces-key = ""
+name = ""
+passed = "true"
+
