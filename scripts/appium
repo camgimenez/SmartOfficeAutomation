@@ -12,6 +12,7 @@ fi
 
 # Check that Appium is installed where we expect
 appium_path="/Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js"
+#appium_path="/usr/local/lib/node_modules/appium/bin/appium.js"
 if [ ! -f $appium_path ] ; then
     >&2 echo "Could not find:" $appium_path
     echo "You should install Appium and make sure it's in /Applications"

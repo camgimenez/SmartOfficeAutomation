@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Environment</string>
+			<key>Titles</key>
+			<array>
+				<string>Development</string>
+				<string>QA</string>
+				<string>UAT</string>
+				<string>Production</string>
+			</array>
+			<key>Key</key>
+			<string>env</string>
+			<key>DefaultValue</key>
+			<string>https://devorder.kehe.com/Services/api/v</string>
+			<key>Values</key>
+			<array>
+				<string>https://devorder.kehe.com/Services/api/v</string>
+				<string>https://qaorder.kehe.com/Services/api/v</string>
+				<string>https://uatorder.kehe.com/Services/api/v</string>
+				<string>https://order.kehe.com/Services/api/v</string>
+			</array>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

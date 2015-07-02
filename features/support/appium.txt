@@ -1,5 +1,5 @@
 [caps]
 platformName = "ios"
-deviceName = "iPhone 5s"
-platformVersion = "8.1"
-app = "build/SmartOffice.app" 
+deviceName = "iPhone 6"
+platformVersion = "8.3"
+app = "build/Connect-Retailer.app" 

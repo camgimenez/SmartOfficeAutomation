@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <link href='stylesheets/style.css' type='text/css' rel='stylesheet' />
+    <meta charset="utf-8">
+    <title>Feature Results</title>
+  </head>
+
+  <body>
+    
+    <div style="clear: both; width: 100%; background-color: #F6F6F6;">
+      <a href="indextest.html" style="color=#0071BC;">&lt; Back</a>
+    </div>
+
+    <div style="float:left; clear:both;">
+      <div class="header_logo">
+        <img src="images/logo.png" width="200" />
+      </div>
+      <div class="header_description" >
+          <h2 class="results">Feature Results:  Login</h2>
+<br />
+
+
+        <table class="run_stats">
+          <tr>
+            <td>started:</td>
+            <td>duration:</td>
+          </tr>
+          <tr>
+            <td>Wednesday July 1, 2015 at 14:25:55</td>
+            <td>4m50.111s</td>
+          </tr>
+        </table>  
+          <pre class="description run_stats">Story<br/>
+As a user of the Retailer app
+I want to see a login page for the application
+so I am able to login to the application</pre>
+      </div>
+    </div>
+
+    <div class="summary_body">
+        <table class="StatTable">
+         <tr>
+          <th>Summary</th>
+          <th>Executed</th>
+	  <th class="passed"><img src="images/table_passed.png" alt="passed" title="passed"> Passed</th>
+          <th class="failed"><img src="images/table_failed.png" alt="failed" title="failed"> Failed</th>
+          <th class="skipped"><img src="images/table_skipped.png" alt="skipped" title="skipped"> Skipped</th>
+          <th class="undefined"><img src="images/table_undefined.png" alt="undefined" title="undefined"> Undefined</th>
+          <th class="pending" ><img src="images/table_pending.png" alt="pending" title="pending"> Pending</th>
+          <th>Average Duration</th>
+        </tr>
+
+        <tr class="summary_row_header">
+          <td>Scenarios</td>
+          <td>7</td>
+          <td>6 <span class="percentage">(85.7%)</span></td>
+          <td>1 <span class="percentage">(14.3%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m38.195s</td>
+        </tr>
+        <tr class="summary_row_header">
+          <td>Steps</td>
+          <td>39</td>
+          <td>38 <span class="percentage">(97.4%)</span></td>
+          <td>1 <span class="percentage">(2.6%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m1.906s</td>
+        </tr>
+
+
+      </table>
+	</div>
+
+    <div class="feature_background">
+	    <div class="scenario_list">
+	      <br />
+	      <h2 class="scenarios">Background: </h2>
+	      <table cellspacing="0" cellpadding="7" border="0" width="100%">
+		<tr>
+		  <td><img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  Im on the login view
+
+		  </td>
+		</tr>
+	      </table>
+	      <br />
+	      <h2 class="scenarios">Scenarios:</h2>
+	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Login - Check Elements</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see the following elements:
+	<br />
+	<table border="1" class="param_table">
+		<tr>
+				<th>password_field</th>
+		</tr>
+			<tr>
+					<td>username_field</td>
+			</tr>
+			<tr>
+					<td>terms_conditions</td>
+			</tr>
+			<tr>
+					<td>login_button</td>
+			</tr>
+	</table>
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>Your block takes 0 arguments, but the Regexp matched 1 argument. (Cucumber::ArityMismatchError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>features/step_definitions/login.rb
+</strong><code><span class="linenum">99</span><span class="comment">########################  Results #################################</span>
+<span class="linenum">100</span>
+<span class="offending"><span class="linenum">101</span><span class="constant">Then</span> <span class="punct">/</span><span class="constant">I</span> <span class="ident">should</span> <span class="ident">see</span> <span class="ident">the</span> <span class="ident">following</span> <span class="ident">elements</span><span class="punct">/</span> <span class="keyword">do</span></span>
+<span class="linenum">102</span>	<span class="ident">pending</span>
+<span class="linenum">103</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>features/step_definitions/login.rb:101:in `/I should see the following elements/&#39;
+features/login.feature:18:in `Then I should see the following elements:&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Login - Login into app with valid credentials</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on email field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter valid email value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on password field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter valid password value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap Done in the keypad
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on the login button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the Orders view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Login - Unauthorized email</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on email field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter unauthorized email value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on password field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter valid password value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap Done in the keypad
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on the login button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see an Error Message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the legend &quot;The username/password entered is not recognized.  Please check your credentials and try again.&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap OK
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should be on the login view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Login - invalid password</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on email field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter valid email value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on password field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter invalid password value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap Done in the keypad
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on the login button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see an Error Message
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see the legend &quot;The username/password entered is not recognized.  Please check your credentials and try again.&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap OK
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should be on the login view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Login - Navigate to Terms of Use</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  Ive clicked on the terms of use link
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I am navigated to the blank terms of use view
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Login - Button disabled</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I havent entered text from either field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  login button is disabled
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Login - Progress Indicator</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on email field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter valid email value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on password field
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I enter valid password value
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap Done in the keypad
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I tap on the login button
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I see a progress indicator until I get a response
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+      Generated by PrettyFace
+    </div>
+  </body>
+</html>
